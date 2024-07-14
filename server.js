@@ -26,7 +26,7 @@ server.on('listening', () => {
 });
 
 const port = process.env.PORT || 3478;
-const host = process.env.HOST || '0.0.0.0'; // Change to your specific host IP if necessary
+const host = process.env.HOST // Change to your specific host IP if necessary
 
 server.bind(port, host, () => {
     console.log(`STUN server is now listening on ${host}:${port}`);
