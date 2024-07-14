@@ -1,0 +1,8 @@
+services:
+  - name: stun-server
+    env:
+      NODE_ENV: production
+    startCommand: node server.js
+    ports:
+      - 3478/udp
+    healthCheckPath: /
