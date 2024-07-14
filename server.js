@@ -25,4 +25,4 @@ server.on('listening', () => {
     console.log(`STUN server listening on ${address.address}:${address.port}`);
 });
 
-server.bind(3478, '127.0.0.1');
+server.bind(process.env.PORT || 3478, '0.0.0.0');
